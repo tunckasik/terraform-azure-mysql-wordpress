@@ -5,8 +5,13 @@ terraform {
       version = "3.46.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name = "sshkey"
+    storage_account_name = "ccseyhan"
+    container_name = "terraform-backend"
+    key = "terraform.tfstate"
+  }
 }
-
 provider "azurerm" {
   features {
     
