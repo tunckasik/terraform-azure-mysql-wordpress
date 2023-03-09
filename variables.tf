@@ -5,12 +5,12 @@ variable "prefix" {
 # MySQL Flexible Database
 variable "db_server_name" {
   description = "Should be unique"
-  default     = "ccseyhandb-wordpress"
+  default     = "bronze-wordpress"
 }
 
 variable "db_username" {
   description = "Should match with 'phonebook-app.py' line #20"
-  default     = "ccseyhan"
+  default     = "bronze"
 }
 
 variable "db_password" {
